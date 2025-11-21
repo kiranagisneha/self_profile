@@ -1,16 +1,17 @@
 import sys
-if len(sys.argv)>1:
-    hobbies=sys.argv[1]
-    strenghtness=sys.argv[2]
-    weakness=sys.argv[3]
+
+if len(sys.argv) > 3:
+    hobbies = sys.argv[1]
+    strength = sys.argv[2]
+    weakness = sys.argv[3]
 else:
-    hobbies="implementing skills"
-    strenghtness="coding skills"
-    weakness="weak in debug"
-    self_profile=("hobbies","strenghtness","weakness")
-    print("hobbiees",hobby)
-    print("strenghtness",strength)
-    print("weakness",weak)
-    print("self_profile",self_profile)
+    hobbies = "implementing skills"
+    strength = "coding skills"
+    weakness = "weak in debugging"
 
+self_profile = (hobbies, strength, weakness)
 
+print("hobbies:", hobbies)
+print("strength:", strength)
+print("weakness:", weakness)
+print("self_profile:", self_profile)
